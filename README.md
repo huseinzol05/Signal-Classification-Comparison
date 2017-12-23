@@ -1,7 +1,7 @@
 # Classify-Sound-Tensorflow
-Classify sound using Deep Learning on Tensorflow
+Classify sound using Deep Learning on Tensorflow and various Gradient Boosting techniques.
 
-Use spectrogram and log amplitude spectrum for sound featuring.
+Use spectrogram, Extract Derivative Features, Log Mel Frequency Energy and MFCC for sound featuring.
 
 ### You can download the dataset [here](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html)
 
@@ -45,7 +45,7 @@ time_stamp = 64
 dimension = 512
 ```
 
-## result spectogram
+## Spectogram
 feed-forward neural network
 ```text
 testing accuracy: 0.463215
