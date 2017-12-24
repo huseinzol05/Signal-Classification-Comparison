@@ -24,7 +24,7 @@ dimension = 512
 ```
 
 ## Spectogram Urban Sound
-feed-forward neural network
+[feed-forward neural network](https://github.com/huseinzol05/Classify-Sound-Tensorflow/blob/master/feed-forward-spectrogram.ipynb)
 ```text
 testing accuracy: 0.463215
                   precision    recall  f1-score   support
@@ -43,7 +43,7 @@ children_playing       0.33      0.12      0.17       126
      avg / total       0.46      0.46      0.44      1101
 ```
 
-convolutional
+[convolutional](https://github.com/huseinzol05/Classify-Sound-Tensorflow/blob/master/cnn-spectrogram.ipynb)
 ```text
 testing accuracy: 0.4
                   precision    recall  f1-score   support
@@ -62,7 +62,7 @@ children_playing       0.16      0.33      0.21         9
      avg / total       0.45      0.40      0.40        95
 ```
 
-recurrent
+[recurrent](https://github.com/huseinzol05/Classify-Sound-Tensorflow/blob/master/rnn-spectrogram.ipynb)
 ```text
 testing accuracy: 0.453488
                   precision    recall  f1-score   support
