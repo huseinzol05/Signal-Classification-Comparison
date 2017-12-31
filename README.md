@@ -1,4 +1,4 @@
-# Classify-Sound-Tensorflow
+# Sound-Classification-Comparison
 Classify sound using Deep Learning on Tensorflow and various Gradient Boosting techniques.
 
 Use spectrogram, Extract Derivative Features, Log Mel Frequency Energy and MFCC for sound featuring.
