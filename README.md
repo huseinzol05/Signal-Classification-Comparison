@@ -197,3 +197,40 @@ accuracy validation set:  0.722689742775
 
 avg / total       0.73      0.72      0.72     12596
 ```
+[XGB](https://github.com/huseinzol05/Sound-Classification-Comparison/blob/master/log-spectrogram-xgb.ipynb)
+```text
+accuracy validation set:  0.801047951731
+             precision    recall  f1-score   support
+
+        bed       0.71      0.78      0.74       330
+       bird       0.85      0.83      0.84       348
+        cat       0.81      0.85      0.83       362
+        dog       0.76      0.70      0.73       351
+       down       0.77      0.74      0.75       442
+      eight       0.83      0.86      0.85       485
+       five       0.80      0.77      0.78       478
+       four       0.83      0.88      0.86       460
+         go       0.68      0.69      0.69       460
+      house       0.90      0.82      0.86       368
+       left       0.81      0.78      0.79       495
+     marvin       0.87      0.80      0.84       363
+       nine       0.81      0.80      0.80       455
+         no       0.76      0.74      0.75       468
+        off       0.77      0.78      0.78       464
+         on       0.78      0.74      0.76       447
+        one       0.76      0.82      0.79       418
+      right       0.86      0.80      0.83       491
+      seven       0.86      0.82      0.84       495
+     sheila       0.94      0.87      0.90       359
+        six       0.78      0.88      0.83       474
+       stop       0.84      0.80      0.82       489
+      three       0.78      0.80      0.79       476
+       tree       0.81      0.71      0.76       329
+        two       0.77      0.81      0.79       506
+         up       0.70      0.82      0.76       504
+        wow       0.80      0.82      0.81       330
+        yes       0.84      0.86      0.85       496
+       zero       0.82      0.84      0.83       453
+
+avg / total       0.80      0.80      0.80     12596
+```
