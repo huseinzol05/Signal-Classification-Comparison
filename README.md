@@ -1,30 +1,42 @@
 # Sound-Classification-Comparison
-Classify sound using Deep Learning on Tensorflow and various Gradient Boosting techniques.
+Classify sound using Deep Learning on Tensorflow and various machine learning models.
 
-Use spectrogram, Extract Derivative Features, Log Mel Frequency Energy and MFCC for sound featuring.
+## Features
 
-### You can download the dataset [here from urban sound](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html), also [here from google](https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html)
+1. log = Log scale spectrogram
+2. spectrogram = spectrogram
+3. features = concat(power spectrum, log-energy, mfcc). Check featuring/features.py
 
-All training session using these parameters
-```python
-learning_rate = 0.001
-epoch = 20
-batch_size = 128
-```
+## Datasets
 
-for convolutional parameters
-```python
-sound_dimension = [64, 512]
-```
+1. [Urban sound](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html)
+2. [Google dataset](https://research.googleblog.com/2017/08/launching-speech-commands-dataset.html)
 
-for recurrent parameters
-```python
-time_stamp = 64
-dimension = 512
-```
+## Models
 
-## Spectrogram Urban Sound
-[feed-forward neural network](https://github.com/huseinzol05/Classify-Sound-Tensorflow/blob/master/feed-forward-spectrogram.ipynb)
+#### Light Gradient Boosting
+ 1. log
+ 2. spectrogram
+
+#### eXtreme Gradient Boosting
+ 1. log
+
+#### Bayes
+ 1. spectrogram
+
+#### Deep-learning
+ 1. features on feed-forward
+ 2. log on convolutional neural network
+ 3. log on feed-forward
+ 4. spectrogram on convolutional neural network
+ 5. spectrogram on feed-forward
+ 6. spectrogram on recurrent neural network
+
+## Results
+
+#### Spectrogram Urban Sound
+
+* feed-forward neural network
 ```text
 testing accuracy: 0.463215
                   precision    recall  f1-score   support
@@ -43,7 +55,7 @@ children_playing       0.33      0.12      0.17       126
      avg / total       0.46      0.46      0.44      1101
 ```
 
-[convolutional](https://github.com/huseinzol05/Classify-Sound-Tensorflow/blob/master/cnn-spectrogram.ipynb)
+* convolutional neural network
 ```text
 testing accuracy: 0.4
                   precision    recall  f1-score   support
@@ -62,7 +74,7 @@ children_playing       0.16      0.33      0.21         9
      avg / total       0.45      0.40      0.40        95
 ```
 
-[recurrent](https://github.com/huseinzol05/Classify-Sound-Tensorflow/blob/master/rnn-spectrogram.ipynb)
+* recurrent neural network
 ```text
 testing accuracy: 0.453488
                   precision    recall  f1-score   support
@@ -81,8 +93,8 @@ children_playing       0.20      0.11      0.14         9
      avg / total       0.54      0.45      0.46        86
 ```
 
-## Spectrogram Google Dataset
-[lgb](https://github.com/huseinzol05/Sound-Classification-Comparison/blob/master/spectrogram-lgb.ipynb)
+#### Spectrogram Google Dataset
+* lgb
 ```text
 accuracy validation set:  0.649594438007
              precision    recall  f1-score   support
@@ -120,7 +132,7 @@ accuracy validation set:  0.649594438007
 
 avg / total       0.66      0.65      0.65     12945
 ```
-[bayes](https://github.com/huseinzol05/Sound-Classification-Comparison/blob/master/spectrogram-bayes.ipynb)
+* bayes
 ```text
 accuracy validation set:  0.245886442642
              precision    recall  f1-score   support
@@ -159,8 +171,8 @@ accuracy validation set:  0.245886442642
 avg / total       0.28      0.25      0.24     12945
 ```
 
-## Log-spectrogram Google Dataset
-[LGB](https://github.com/huseinzol05/Sound-Classification-Comparison/blob/master/log-spectrogram-lgb.ipynb)
+#### Log-spectrogram Google Dataset
+* LGB
 ```text
 accuracy validation set:  0.722689742775
              precision    recall  f1-score   support
@@ -197,7 +209,8 @@ accuracy validation set:  0.722689742775
 
 avg / total       0.73      0.72      0.72     12596
 ```
-[XGB](https://github.com/huseinzol05/Sound-Classification-Comparison/blob/master/log-spectrogram-xgb.ipynb)
+
+* XGB
 ```text
 accuracy validation set:  0.801047951731
              precision    recall  f1-score   support
@@ -234,3 +247,7 @@ accuracy validation set:  0.801047951731
 
 avg / total       0.80      0.80      0.80     12596
 ```
+
+## images
+
+![alt text](images/augmentation.png)
